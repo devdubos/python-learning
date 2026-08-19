@@ -18,11 +18,8 @@ score = 4
 
 feedback = "Excellent" if score == 5 else ("Good" if score == 4 else "Try harder")
 print(feedback)
-
-
 a = 12
 b = 25
 c = 7
-
 max_num = (a if a > c else c) if a > b else (b if b > c else c)
 print(max_num)

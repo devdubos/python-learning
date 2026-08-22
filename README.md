@@ -26,3 +26,4 @@ Day five:
 Day six:
   Created training scripts to practice and reinforce 
   everything learned so far.
+Day seven - eight : Repeat Python functions, f-strings, and ternary operators. Refactored code into def blocks and added input validation.

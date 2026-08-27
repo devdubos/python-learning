@@ -30,3 +30,4 @@ Day 7-8:
 Mastered 'while' loops from scratch. Practiced mathematical patterns (digit parsing using % and //), accumulation logic, and built-in condition filtering.
 Day 9:
 Started learning for loops. Practiced iterating over sequences, using range(), and writing basic loop patterns.
+Day 10:

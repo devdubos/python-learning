@@ -27,3 +27,18 @@ while num > 0:
     num = num // 10
 
 print("Sum of digits:", digit_sum)
+
+
+secret_number = 7
+user_guess = 0
+
+# Simulating user inputs: 3, 5, 7
+guesses = [3, 5, 7]
+index = 0
+
+while user_guess != secret_number:
+    user_guess = guesses[index]
+    print(f"User guessed: {user_guess}")
+    index += 1
+
+print("Correct guess!")

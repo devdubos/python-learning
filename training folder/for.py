@@ -1,6 +1,7 @@
 def task_1():
     for i in range(3):
         print(f"{i} hello world", end=" ")
+
 def task_2():
     for i in range(11):
         if i % 2 == 0:
@@ -15,7 +16,7 @@ def task_prices():
     for i in prices:
         total = i + total
     print(total)
-task_prices()
+
 
 def task_3():
     secret = "h-e-l-l-o"
@@ -24,7 +25,7 @@ def task_3():
             continue
         else:
             print(f"{i}", end="")
-task_3()
+
 
 def check_bank_security():
     logs = ["login_success", "transfer_100", "password_error", "transfer_250", "login_success", "password_error", "transfer_500"]
@@ -43,4 +44,18 @@ def check_bank_security():
     print(f"Errors detected: {errors_count}")
     print(f"Total money transferred: {total_money}")
 
-check_bank_security()
+
+
+def task_for():
+     for i in range(10):
+        if i % 3 == 0 and i != 0:
+            print(i)
+task_for()
+
+def task_for2():
+    i = int(input())
+    box = 0
+    for i in range(1, i + 1):
+        box += 18
+    print(box)
+task_for2()

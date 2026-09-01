@@ -56,6 +56,6 @@ def task_for2():
     i = int(input())
     box = 0
     for i in range(1, i + 1):
-        box += 18
+        box += i
     print(box)
 task_for2()

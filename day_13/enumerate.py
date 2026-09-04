@@ -18,3 +18,19 @@ def task_03():
         if index % 2 == 0:
             print(f"Even index {index}: {name}")
 task_03()
+
+def task_04():
+    users = ["user_102", "admin", "user_205", "admin", "user_301", "guest", "admin"]
+
+print("=== Admin Search ===")
+
+for position, user_id in enumerate(users, start=1):
+    if user_id == "admin":
+        print(f"Admin found at position {position} (ID: {user_id}_{position})")
+
+print("\n=== Admin Database ===")
+
+admin_map = {pos: name for pos, name in enumerate(users, start=1) if name == "admin"}
+
+print(admin_map)
+task_04()

@@ -50,7 +50,7 @@ def task_for():
      for i in range(10):
         if i % 3 == 0 and i != 0:
             print(i)
-task_for()
+#task_for()
 
 def task_for2():
     i = int(input())
@@ -58,4 +58,10 @@ def task_for2():
     for i in range(1, i + 1):
         box += i
     print(box)
-task_for2()
+#task_for2()
+
+def task_56():
+    friends = ["Anna","Sam","Mike"]
+    for index, name in enumerate(friends):
+        print(f"player number {index} - it is {name}")
+task_56()

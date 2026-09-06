@@ -34,3 +34,5 @@ Day 10-12:
 Practiced complex loop patterns. Combined loops with conditional statements and explored nested loop structures.
 Day 13:
 Learned about the enumerate() function. Practiced tracking item indexes simultaneously while iterating through sequences.
+Day 16:
+    Learned about Iterators

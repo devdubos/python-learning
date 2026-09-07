@@ -18,3 +18,18 @@ def custom_for_loop(iterable):
 
 data = [10, 20, 30, 40]
 custom_for_loop(data)
+
+def task_eat():
+    menu = ["Pizza", "Sushi", "Borsch"]
+
+    menu_iterator = iter(menu)
+
+    print(next(menu_iterator))
+    print(next(menu_iterator))
+    print(next(menu_iterator))
+
+    try:
+        print(next(menu_iterator))
+    except StopIteration:
+        print("No more items!")
+task_eat()

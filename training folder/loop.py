@@ -32,7 +32,6 @@ print("Sum of digits:", digit_sum)
 secret_number = 7
 user_guess = 0
 
-# Simulating user inputs: 3, 5, 7
 guesses = [3, 5, 7]
 index = 0
 
@@ -42,3 +41,11 @@ while user_guess != secret_number:
     index += 1
 
 print("Correct guess!")
+
+
+def task_101():
+    balance = 0
+    while balance < 100:
+        balance += 20
+    print(balance)
+task_101()

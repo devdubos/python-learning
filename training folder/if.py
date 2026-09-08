@@ -16,4 +16,26 @@ def task_sunny():
         print("U can stay home and rest")
     else:
         print("Work day with bad whether")
-task_sunny()
+
+
+def task_ternarn():
+    age = int(input("Write ur age: "))
+    status = "elder" if age >= 40 else "young"
+    print(status)
+
+
+def task_ternarn1212():
+    age = int(input("Write ur age: "))
+    return "Access true" if age >= 18 else "Access false"
+print(task_ternarn1212())
+
+def task_price():
+    price = 500
+    balance_card = float(input("Write balance of ur card: "))
+    return "Buying true" if balance_card >= price else "Buying false"
+print(task_price)
+
+def task_temp():
+    temp = float(input("Write temperature: "))
+    return "Boyling" if temp >= 100 else ("Frizze" if temp <= 0  else "liqud")
+print(task_temp())

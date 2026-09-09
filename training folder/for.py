@@ -64,4 +64,40 @@ def task_56():
     friends = ["Anna","Sam","Mike"]
     for index, name in enumerate(friends):
         print(f"player number {index} - it is {name}")
-task_56()
+
+def task_567():
+    for i in range(1,6):
+        print(f"step{i}")
+    return "Complete"
+#print(task_567())
+
+def task_568():
+    box =[1, 2, 3, 4]
+    nubmer = 0
+    for i in box:
+        nubmer += i
+    print(nubmer)
+#task_568()
+
+# for i in range(3, 10, 3):
+    #print(i)
+
+#N = int(input())
+#for i in range(1, N+1):
+    #ox += i
+#print(f"box:{box}" if box % 2 == 0 else "odd nubmer")
+def task_12121():
+    N = int(input())
+    box = 0
+    for i in range(1, N+1):
+        box += i if i % 2 == 0 else 0
+    print(box)
+
+def task_111():
+    box = 0
+    for i in range(1, 31):
+        if i % 3 == 0:
+            continue
+        print(i)
+task_111()
+

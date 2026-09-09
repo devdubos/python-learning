@@ -34,5 +34,10 @@ Day 10-12:
 Practiced complex loop patterns. Combined loops with conditional statements and explored nested loop structures.
 Day 13:
 Learned about the enumerate() function. Practiced tracking item indexes simultaneously while iterating through sequences.
-Day 16:
-    Learned about Iterators
+Day 14-17:
+Busy with real-time tasks, just remind myself about what already learned. Refresh knowlege and practice work with list, func while, for. Learned about use "def". Return - when we need just save info from some func in some another file.
+Day 17:
+Learned about Iterators.
+Day 17:
+Yeah again back to str, list cause im gonna learn tuple
+Day 18:

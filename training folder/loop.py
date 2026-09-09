@@ -1,51 +1,32 @@
-count = 0
-while count < 5:
-    print("hello")
-    count += 1
-    
-text = "hello world"
-vowels = "aeiou"
-count = 0
 
-for char in text:
-    if char in vowels:
-        count += 1
+#def task_101():
+    #balance = 0
+    #while balance < 100:
+        #balance += 20
+    #print(balance)
+#task_101()
 
-print("Number of vowels:", count)
+def learn_while():
+    x = int(input())
+    box = 0
+    while x != 0:
+        box += x
+        x = int(input())
+    print(box)
 
-n = 5
+def learn_while2():
+    box = 0
+    x1 = 0
+    while x1 != 10:
+        x1 += 1
+        x = int(input())
+        if x >= 0:
+            box += x
+        else:
+            print('stop')
+            break
+    print(box)
+learn_while2()
 
-for i in range(1, 11):
-    print(f"{n} x {i} = {n * i}")
-
-
-    num = 12345
-digit_sum = 0
-
-while num > 0:
-    digit_sum += num % 10
-    num = num // 10
-
-print("Sum of digits:", digit_sum)
-
-
-secret_number = 7
-user_guess = 0
-
-guesses = [3, 5, 7]
-index = 0
-
-while user_guess != secret_number:
-    user_guess = guesses[index]
-    print(f"User guessed: {user_guess}")
-    index += 1
-
-print("Correct guess!")
-
-
-def task_101():
-    balance = 0
-    while balance < 100:
-        balance += 20
-    print(balance)
-task_101()
+            
+        

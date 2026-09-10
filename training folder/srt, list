@@ -1,3 +1,11 @@
-my_list = [1,2]
-my_list.append(100)
-print(my_list)
+phone_number = " +375295774545"
+len(phone_number)
+if phone_number.strip().startswith("+3"):
+    print("Belarus number")
+else:
+    print("Unknow number")
+
+phone_number = phone_number.replace("+3","+7")
+print(phone_number)
+
+

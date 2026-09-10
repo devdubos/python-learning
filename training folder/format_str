@@ -1,0 +1,8 @@
+srtt = ("message")
+print(srtt.strip())
+if len(srtt) == 0:
+    print("empty")
+elif "spam" in srtt.lower():
+    print("BLOCKED")
+else:
+    print(srtt)

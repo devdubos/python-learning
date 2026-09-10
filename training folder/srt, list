@@ -9,3 +9,7 @@ phone_number = phone_number.replace("+3","+7")
 print(phone_number)
 
 
+full_name = "   pYthOOn tHE GReat Lang  "
+full_name = full_name.strip().lower().capitalize()
+print(full_name)
+print(f"{full_name[0]}.{full_name[-1]}")

@@ -8,9 +8,9 @@ repeated = [1, 2] * 4
 print(zeros)
 print(repeated)
 
-animals = ['кот', 'собака', 'слон', 'тигр']
-print('слон' in animals)
-print('лев' in animals)
+animals = ['cat', 'dog', 'elef', 'tiger']
+print('elef' in animals)
+print('lion' in animals)
 
 nums = [10, 20, 30, 40, 50, 60]
 del nums[2]

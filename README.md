@@ -41,3 +41,4 @@ Learned about Iterators.
 Day 17:
 Yeah again back to str, list cause im gonna learn tuple
 Day 18:
+dicccct today was jobe 

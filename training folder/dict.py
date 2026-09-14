@@ -41,8 +41,6 @@ author = {
 }
 print(f"keys: {author.keys()}")
 
-for pair in author.values():
-    print(pair)
 
 
 

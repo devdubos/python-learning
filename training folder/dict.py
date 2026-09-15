@@ -34,13 +34,37 @@
 # print(author)
 
 
-author = {
-    "name": "Sergey",
-    "age": 18,
-    "is_dev": True,
-}
-print(f"keys: {author.keys()}")
+# author = {
+#     "name": "Sergey",
+#     "age": 18,
+#     "is_dev": True,
+# }
 
+# for pair in author.keys():
+#     print(pair)
+
+# for pair in author.values():
+#     print(pair)
+
+# for pair in author.items():
+#     print(pair)
+
+# print(*author.items(),sep="\n")
+
+
+user = {
+    "name": "Sergey",
+    "surname": "Dubos",
+    "city": "Minsk"
+}
+print(user['name'])
+print(user.get('surname'))
+
+user["city"] = "Edinburg"
+user["learning_python"] = True
+user.pop('city')
+for keys, values in user.items():
+    print(keys,"-", values)
 
 
 

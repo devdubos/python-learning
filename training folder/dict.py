@@ -34,22 +34,22 @@
 # print(author)
 
 
-# author = {
-#     "name": "Sergey",
-#     "age": 18,
-#     "is_dev": True,
-# }
+author = {
+    "name": "Sergey",
+    "age": 18,
+    "is_dev": True,
+}
 
-# for pair in author.keys():
-#     print(pair)
+for pair in author.keys():
+    print(pair)
 
-# for pair in author.values():
-#     print(pair)
+for pair in author.values():
+    print(pair)
 
-# for pair in author.items():
-#     print(pair)
+for pair in author.items():
+    print(pair)
 
-# print(*author.items(),sep="\n")
+print(*author.items(),sep="\n")
 
 
 user = {

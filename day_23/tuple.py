@@ -30,3 +30,18 @@ junior, middle, Senior = my_tuple2
 print(junior)
 print(middle)
 print(Senior)
+
+
+student = ("sergey","24","Python")
+name, age, language = student
+print(name,age,language)
+
+word = ["python","code","list", "python","set","code"]
+word = set(word)
+print(len(word))
+nub = "tuple" in word
+print(nub)
+word.add("loop")
+word.remove("list")
+print(word)
+

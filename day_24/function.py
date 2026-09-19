@@ -34,3 +34,29 @@ def show_double(x):
     return  x * 2
 result = show_double(5)
 print(result)
+
+def calculate_area(width, height):
+    return width * height
+
+def is_even(number):
+    return number % 2 == 0
+
+def get_largest(a, b, c):
+    if a >= b and a >= c:
+        return a
+    elif b >= a and b >= c:
+        return b
+    else:
+        return c
+
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def greet_user(name):
+    return f"Hello, {name}!"
+
+print(calculate_area(5, 10))
+print(is_even(7))
+print(get_largest(10, 25, 15))
+print(celsius_to_fahrenheit(25))
+print(greet_user("Alice"))

@@ -40,5 +40,11 @@ Day 17:
 Learned about Iterators.
 Day 17:
 Yeah again back to str, list cause im gonna learn tuple
-Day 18:
-dicccct today was jobe 
+Day 17:
+Yeah again back to str, list cause im gonna learn tuple
+Day 18-22:
+Dedicated to comprehensive review and deep-dive practice of all core data structures (strings, lists, and dicts). Focused on solidifying foundational knowledge before moving forward.
+Day 23:
+Learned about Sets and Tuples. Practiced their unique properties, syntax, and use cases, such as handling unique elements and working with immutable sequences.
+Day 24:
+Started learning about Functions. Began exploring how to define functions, use arguments, work with return statements, and write clean, reusable blocks of code.

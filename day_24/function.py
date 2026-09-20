@@ -38,8 +38,6 @@ print(result)
 def calculate_area(width, height):
     return width * height
 
-def is_even(number):
-    return number % 2 == 0
 
 def get_largest(a, b, c):
     if a >= b and a >= c:
@@ -56,7 +54,39 @@ def greet_user(name):
     return f"Hello, {name}!"
 
 print(calculate_area(5, 10))
-print(is_even(7))
 print(get_largest(10, 25, 15))
 print(celsius_to_fahrenheit(25))
 print(greet_user("Alice"))
+
+
+def is_even(number):
+    if number % 2 == 0:
+        return "Even" 
+print(is_even(24))
+
+
+
+def get_square(number):
+    return number**2
+
+
+result = get_square(4)
+print(result)
+
+def check_age(age):
+    if age < 12:
+        return 'child'
+    elif 12 <= age <= 17:
+        return 'teen'
+    else:
+        return 'adult'
+print(check_age(12))
+
+def check_password(password):
+    if len(password) < 8:
+        return 'Too short'
+    if any(char.isdigit() for char in password):
+        return 'strong'
+    else:
+        return 'weak'
+print(check_password('qqweasdasd'))

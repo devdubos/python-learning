@@ -26,27 +26,40 @@ Day five:
 Day six:
   Created training scripts to practice and reinforce 
   everything learned so far.
+
 Day 7-8:
   Mastered 'while' loops from scratch. Practiced mathematical patterns (digit parsing using % and //), accumulation logic, and built-in condition filtering.
+
 Day 9:
   Started learning for loops. Practiced iterating over sequences, using range(), and writing basic loop patterns.
+  
 Day 10-12:
   Practiced complex loop patterns. Combined loops with conditional statements and explored nested loop structures.
+
 Day 13:
   Learned about the enumerate() function. Practiced tracking item indexes simultaneously while iterating through sequences.
+
 Day 14-17:
   Busy with real-time tasks, just remind myself about what already learned. Refresh knowlege and practice work with list, func while, for. Learned about use "def". Return - when we need just save info from some func in some another file.
+
 Day 17:
   Learned about Iterators.
+
 Day 17:
   Yeah again back to str, list cause im gonna learn tuple
-Day 17:
-  Yeah again back to str, list cause im gonna learn tuple
+
 Day 18-22:
   Dedicated to comprehensive review and deep-dive practice of all core data structures (strings, lists, and dicts). Focused on solidifying foundational knowledge before moving forward.
+
 Day 23:
   Learned about Sets and Tuples. Practiced their unique properties, syntax, and use cases, such as handling unique elements and working with immutable sequences.
+
 Day 24:
   Started learning about Functions. Began exploring how to define functions, use arguments, work with return statements, and write clean, reusable blocks of code.
+
 Day 25:
   Practiced if/elif/else conditions and logic in funtions. Learned about scope: global, local. Learned how to search for digits in strings using any and .isdigit.
+
+Day 25-26:
+  Day 26:
+  Deepened knowledge of functions. Learned about positional and keyword arguments, default parameters, and unpacking mechanisms using *args and **kwargs. Explore fixed logic issues with conditional returns.

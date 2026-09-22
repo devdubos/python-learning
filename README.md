@@ -61,5 +61,6 @@ Day 25:
   Practiced if/elif/else conditions and logic in funtions. Learned about scope: global, local. Learned how to search for digits in strings using any and .isdigit.
 
 Day 25-26:
-  Day 26:
   Deepened knowledge of functions. Learned about positional and keyword arguments, default parameters, and unpacking mechanisms using *args and **kwargs. Explore fixed logic issues with conditional returns.
+Day 27:
+  Learned try/except/else/finally. Explored ValueError, TypeError, KeyError, ZeroDivisionError. Practiced raise for custom exceptions.

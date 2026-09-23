@@ -64,3 +64,5 @@ Day 25-26:
   Deepened knowledge of functions. Learned about positional and keyword arguments, default parameters, and unpacking mechanisms using *args and **kwargs. Explore fixed logic issues with conditional returns.
 Day 27:
   Learned try/except/else/finally. Explored ValueError, TypeError, KeyError, ZeroDivisionError. Practiced raise for custom exceptions.
+Day 29:
+  Encountered my first difficulties with Python in VS Code. Found that there is no configured virtual environment (venv). Because of this, I plan to switch to PyCharm for future development.

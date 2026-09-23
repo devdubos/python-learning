@@ -60,8 +60,7 @@ user = {
 print(user['name'])
 print(user.get('surname'))
 
-user["city"] = "Edinburg"
-user["learning_python"] = True
+user['city'] = "Edinburg"
 user.pop('city')
 for keys, values in user.items():
     print(keys,"-", values)

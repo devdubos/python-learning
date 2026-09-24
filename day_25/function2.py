@@ -39,8 +39,8 @@ def get_sum(*args):
     total_sum = sum(args)
     return total_sum
 
-print(get_sum(1, 2, 3, 4, 5))
-print(get_sum(1, 2, 3))
+# print(get_sum(1, 2, 3, 4, 5))
+# print(get_sum(1, 2, 3))
      
 
 

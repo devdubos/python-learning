@@ -101,3 +101,10 @@ def task_111():
         print(i)
 task_111()
 
+def hero(bullets, dragons):
+    for bullets, dragons in enumerate(hero):
+        if bullets % dragons >= 0:
+            result = True
+        else:
+            result = False
+    return result

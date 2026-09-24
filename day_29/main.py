@@ -1,4 +1,4 @@
+import config
+from day_25.func2 import get_sum
 
-from day_25.function2 import get_sum
-
-print(get_sum(1,2,3,4,5))
+print(get_sum(1,3,2,4,5,5,5,5,5,3,3,3))

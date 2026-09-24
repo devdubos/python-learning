@@ -66,3 +66,8 @@ Day 27:
   Learned try/except/else/finally. Explored ValueError, TypeError, KeyError, ZeroDivisionError. Practiced raise for custom exceptions.
 Day 29:
   Encountered my first difficulties with Python in VS Code. Found that there is no configured virtual environment (venv). Because of this, I plan to switch to PyCharm for future development.
+Day 30:
+  Decided to stay in VS Code for now and continue configuring the 
+    environment here. Today, I dive into importing external libraries 
+    and started practicing algorithmic challenges on Codewars 
+    to sharpen my skills.

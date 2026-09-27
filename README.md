@@ -71,3 +71,5 @@ Day 30:
     environment here. Today, I dive into importing external libraries 
     and started practicing algorithmic challenges on Codewars 
     to sharpen my skills.
+
+Day30-31:Started learning Object-Oriented Programming, focusing specifically on classes and creating basic object templates.

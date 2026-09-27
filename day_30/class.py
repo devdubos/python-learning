@@ -37,3 +37,32 @@ my_cart = Cart()
 my_cart.add_item("Shoes", 5000)
 my_cart.add_item("T-shirt", 1500)
 print(f"Total price: {my_cart.get_total()}")
+
+
+
+class Car:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+    def start_engine(self):
+        return f"The {self.year} {self.brand} {self.model} engine is now running."
+
+my_car = Car("Tesla", "Model 3", 2026)
+
+print(my_car.brand)
+print(my_car.start_engine())
+
+
+class Robot:
+    def __init__(self, name):
+        self.name = name
+
+    def say_hello(self):
+        print("Hello human")
+
+my_robot = Robot("Robo")
+
+print(my_robot.name)
+my_robot.say_hello()

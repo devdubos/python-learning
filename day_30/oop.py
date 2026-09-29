@@ -30,4 +30,14 @@ alex_account = BankAccount("Alex", 1000)
 alex_account.withdraw(300)
 
 
+class Calculator:
+    def __init__(self):
+        self.history = []
 
+    def add(self, a, b):
+        result = a + b
+        self.history.append(f"{a} + {b} = {result}")
+        return result
+
+    def get_history(self):
+        return self.history

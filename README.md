@@ -74,3 +74,4 @@ Day 30:
 
 Day30-31:Started learning Object-Oriented Programming, focusing specifically on classes and creating basic object templates.
 Day32: Noticed im very bad in writing code without gides, start practice in code wars. Need some time to keep the way
+Day 33: 

@@ -135,4 +135,41 @@ def promocod_box(user_cart, promocod):
         result_price += product.get("price") * product.get("quantity")
     return result_price * discount
 
-print(promocod_box(user_cart, "A3Y"))
+
+
+
+
+
+
+
+
+
+user_cart = [
+    {"name": "Футболка", "price": 1000, "quantity": 2}, # 2 штуки по 1000 = 2000 руб
+    {"name": "Кепка", "price": 500, "quantity": 1}      # 1 штука по 500 = 500 руб
+]
+
+
+class Cart:
+    def __init__(self, items) -> None:
+        self.product = items
+    def get_final_price(self, promocod):
+        result_price = 0
+        discount = 1
+        if promocod == "A3Y6":
+            discount = 0.9
+        for product in self.product:
+            result_price += product.get("price") * product.get("quantity")
+        return result_price * discount
+
+my_cart = Cart(user_cart)
+print(Cart.get_final_price("A3Y6"))
+
+
+
+
+
+
+
+
+

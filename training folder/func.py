@@ -163,13 +163,66 @@ class Cart:
         return result_price * discount
 
 my_cart = Cart(user_cart)
-print(Cart.get_final_price("A3Y6"))
+print(my_cart.get_final_price("A3Y6"))
 
 
 
 
 
 
+class Cart:
+    def __init__(self, items):
+        self.product = items 
+
+    def add_product(self, name, price, quantity):
+       
+        self.product.append({"name": name, "price": price, "quantity": quantity})
+
+    def remove_product(self, name):
+     
+        self.product = [p for p in self.product if p["name"] != name]
+
+    def get_final_price(self):
+        total = 0
+        for p in self.product:
+            total += p["price"] * p["quantity"]
+        return total
 
 
+
+y = [{"name": "Футболка", "price": 1000, "quantity": 2}]
+x = Cart(y) 
+
+
+x.add_product("Кепка", 500, 1) 
+x.remove_product("Футболка")    
+
+
+price = x.get_final_price()
+print(price) 
+
+
+
+
+
+class User:
+    def __init__(self, username, email, password):
+        self.name = username
+        self.email = email
+        self.password = password
+        self.is_blocked = False
+
+    def change_password(self, old_pass, new_pass):
+        if self.password == old_pass:
+            self.password = new_pass
+            return "Пароль успешно изменен"
+        return "Старый пароль неверный"
+
+    def block_user(self):
+        self.is_blocked = True
+
+    def send_message(self, text):
+        if self.is_blocked:
+            return "Ошибка: ваш аккаунт заблокирован"
+        return f"Пользователь {self.name} отправил сообщение: {text}"
 

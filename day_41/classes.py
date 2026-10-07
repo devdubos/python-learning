@@ -81,3 +81,58 @@ class Bank:
 
 my_card = Bank("Алексей",5000)
 # print(my_card.pay(1500))
+
+user_scooter = {
+    "id": "045", "model": "Xiaomi","charge":100,"user": "None"
+}
+
+class Scooter:
+    def __init__(self,items) -> None:
+        self.product = items
+    def start_ride(self):
+        if self.product.get("charge") < 20 or self.product.get("user") == "Yes":
+            return {"report message": "None", "user.message":"Error. Please take another scooter."}
+        self.product["user"] = "Yes"
+        return self.product
+    def end_ride(self, time):
+        result_money = time * 10
+        result_charge = self.product.get("charge") - (time*2)
+        self.product.update(charge=result_charge,user = "None")
+        return result_money,self.product
+    def charge(self):  
+        self.product.update(charge = 100)
+        return self.product
+
+
+ride_user_scooter = Scooter(user_scooter)
+
+print("Исходный статус:", user_scooter["user"])
+
+
+print("\n--- Запускаем start_ride() ---")
+print(ride_user_scooter.start_ride()) 
+
+
+
+print("\n--- Запускаем end_ride() ---")
+print(ride_user_scooter.end_ride(20))
+
+
+
+user_data = {
+    "name": "Алексей",
+    "balance": 1000,          # Деньги на счету для покупки фильмов
+    "subscription": "free",   # Может быть "free", "premium" или "admin"
+    "history": []             # Список просмотренных фильмов (пока пустой)
+}
+
+
+class UserProfile:
+    def __init__(self,user_data) -> None:
+        self.data = user_data
+    def watch_movie(self, movie_name, is_premium):
+        if is_premium == True and self.data.get("subscription")=="free":
+            return "error, for watch this movie u need subs"
+        if is_premium == False or self.data.get("subscription")=="premium" or self.data.get("subscription")=="admin":
+            self.data.update("history") = movie_name
+        

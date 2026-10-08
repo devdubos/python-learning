@@ -134,5 +134,5 @@ class UserProfile:
         if is_premium == True and self.data.get("subscription")=="free":
             return "error, for watch this movie u need subs"
         if is_premium == False or self.data.get("subscription")=="premium" or self.data.get("subscription")=="admin":
-            self.data.update("history") = movie_name
-        
+            self.data.update("history").append(movie_name)
+    def 

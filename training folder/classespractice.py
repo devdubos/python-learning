@@ -84,20 +84,127 @@ class CoffeeMachinePro:
         self.resources[resource_name] += amount
         return f"Successfully added {amount} to {resource_name}. Current total: {self.resources[resource_name]}."
 
-    def brew_coffee(self, coffee_type: str, sugar_cubes: int = 0) -> str
-        if self.maintenance_mode:
-            return "Error: Cannot brew coffee. Machine is in maintenance mode!"
+    # def brew_coffee(self, coffee_type: str, sugar_cubes: int = 0) -> str
+    #     if self.maintenance_mode:
+    #         return "Error: Cannot brew coffee. Machine is in maintenance mode!"
             
-        if not (0 <= sugar_cubes <= 5):
-            return "Error: Sugar cubes must be between 0 and 5!"
+    #     if not (0 <= sugar_cubes <= 5):
+    #         return "Error: Sugar cubes must be between 0 and 5!"
 
-        if coffee_type == "espresso":
-            water_needed = 50
-            beans_needed = 15
-            milk_needed = 0
-        elif coffee_type == "cappuccino":
-            water_needed = 100
-            beans_needed = 15
-            milk_needed = 150
+    #     if coffee_type == "espresso":
+    #         water_needed = 50
+    #         beans_needed = 15
+    #         milk_needed = 0
+    #     elif coffee_type == "cappuccino":
+    #         water_needed = 100
+    #         beans_needed = 15
+    #         milk_needed = 150
+    #     else:
+    #         return f"Error: Drink '{coffee_type}' is not on the menu!"
+
+
+
+
+class SmartHotelRoom:
+    def __init__(self,guest_name:str) -> None:
+        self.name = guest_name
+        self.statuscard = False
+        self.statusroom = {
+            "light":"off",
+            "TV":"off"
+        }
+    def activate_card(self):
+        self.statuscard = True
+        self.statusroom.update(light = "on")
+        return self  
+    def activate_tv(self):
+        if self.statuscard == True:
+            self.statusroom.update(TV = "on")
+            return self
         else:
-            return f"Error: Drink '{coffee_type}' is not on the menu!"
+            return "Ur card dont active, please call reseption"
+
+# user_name = SmartHotelRoom("Sergey")
+
+# print(user_name.activate_card().activate_tv().name, user_name.statusroom)
+
+
+#lets goooo, trying onmyself without any or something wirte clear code
+
+incoming_team_data = {
+    "team_title": "NAVI",
+    "roster_count": 5
+}
+
+class OnlineArenaTournament:
+    def __init__(self,namegame:str) -> None:
+        self.namegame = namegame
+        self.tournament = {
+            "Name game":self.namegame,
+            "Registrated teams": [],
+            "Correct match":{
+                "Match_active":False,
+                "Team1":None,
+                "Team2":None,
+                "Round":None,
+                "Score":None,
+            }
+        }
+        self.statustournament = True
+    def registration(self,incoming_team_data):
+        if self.statustournament == False:
+            return "Registration closed: Tournament ended"
+        if incoming_team_data.get("roster_count") != 5:
+            return "Invalid roster size: Team must have exactly 5 players"
+        if incoming_team_data.get("team_title") in self.tournament["Registrated teams"]:
+            return "Duplicate error: Team already registered"
+        self.tournament["Registrated teams"].append(incoming_team_data.get("team_title"))
+        return self.tournament
+    def start_match(self,team_1:str,team_2:str):
+        if team_1 not in self.tournament["Registrated teams"] or team_2 not in self.tournament["Registrated teams"]:
+            return "Error a both teams not registration"
+        if self.statustournament == False:
+            return "Registration closed: Tournament ended"
+        if self.tournament["Correct match"]["Match_active"] == True:
+            return "Another match is already running"
+        self.tournament["Correct match"].update(Match_active= True)
+        self.tournament["Correct match"]["Team1"]= team_1
+        self.tournament["Correct match"]["Team2"]= team_2
+        return self.tournament
+    def match(self,round:int,score:str):
+        if self.tournament["Correct match"]["Match_active"] == False:
+            return "Error please start the match"    
+        if score == "4:0" or score == "0:4":
+            return "Invalid score please, restart match"
+        if round == 16:
+            return "Invalid round please, restart match"
+        self.tournament["Correct match"].update["Round"]= round        
+        self.tournament["Correct match"].update["Score"]= score
+    def end_match(self):
+        self.statustournament = False
+        self.tournament = {
+            "Name game":self.namegame,
+            "Registrated teams": [],
+            "Correct match":{
+                "Match_active":False,
+                "Team1":None,
+                "Team2":None,
+                "Round":None,
+                "Score":None,
+            }
+        }    
+        return "Congratulation tournamens had been end"
+        
+arena_tournament = OnlineArenaTournament("CS2")
+navi = {"team_title": "NAVI", "roster_count": 5}
+spirit = {"team_title": "Team Spirit", "roster_count": 5}
+
+arena_tournament.registration(navi)
+arena_tournament.registration(spirit)
+final_report = arena_tournament.start_match("NAVI","Team Spirit")
+print(final_report)
+
+
+
+
+

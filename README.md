@@ -62,17 +62,26 @@ Day 25:
 
 Day 25-26:
   Deepened knowledge of functions. Learned about positional and keyword arguments, default parameters, and unpacking mechanisms using *args and **kwargs. Explore fixed logic issues with conditional returns.
+
 Day 27:
   Learned try/except/else/finally. Explored ValueError, TypeError, KeyError, ZeroDivisionError. Practiced raise for custom exceptions.
+
 Day 29:
   Encountered my first difficulties with Python in VS Code. Found that there is no configured virtual environment (venv). Because of this, I plan to switch to PyCharm for future development.
+  
 Day 30:
-  Decided to stay in VS Code for now and continue configuring the 
-    environment here. Today, I dive into importing external libraries 
-    and started practicing algorithmic challenges on Codewars 
-    to sharpen my skills.
+  Decided to stay in VS Code for now and continue configuring the environment here. Today, I dive into importing external libraries and started practicing algorithmic challenges on Codewars to sharpen my skills.
 
-Day30-31:Started learning Object-Oriented Programming, focusing specifically on classes and creating basic object templates.
-Day32: Noticed im very bad in writing code without gides, start practice in code wars. Need some time to keep the way
-Day 33-41 
-Focused heavily on theory and practicing Object-Oriented Programming (OOP) principles, specifically by diving into Python classes.
+Day30-31:
+  Started learning Object-Oriented Programming, focusing specifically on classes and creating basic object templates.
+
+Day32: 
+  Noticed im very bad in writing code without gides, start practice in code wars. Need some time to keep the way
+
+Day 33-44
+  Focused heavily on theory and practicing Object-Oriented Programming (OOP) principles, specifically by diving into Python classes.
+
+Day 45:
+  Successfully built a complex esports tournament management system (OnlineArenaTournament) using deep OOP principles. 
+Mastered real-world backend architecture concepts, including data contracts mimicking frontend JSON objects, safely nesting multi-level dictionaries, and managing system states.
+Practiced debugging syntax edge cases and refactored object manipulation to use precise chained square brackets instead of .update for professional, strict data handling.

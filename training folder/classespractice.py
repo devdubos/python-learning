@@ -84,7 +84,7 @@ class CoffeeMachinePro:
         self.resources[resource_name] += amount
         return f"Successfully added {amount} to {resource_name}. Current total: {self.resources[resource_name]}."
 
-    def brew_coffee(self, coffee_type: str, sugar_cubes: int = 0) -> str:
+    def brew_coffee(self, coffee_type: str, sugar_cubes: int = 0) -> str
         if self.maintenance_mode:
             return "Error: Cannot brew coffee. Machine is in maintenance mode!"
             

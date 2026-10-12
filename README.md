@@ -83,5 +83,6 @@ Day 33-44
 
 Day 45:
   Successfully built a complex esports tournament management system (OnlineArenaTournament) using deep OOP principles. 
-Mastered real-world backend architecture concepts, including data contracts mimicking frontend JSON objects, safely nesting multi-level dictionaries, and managing system states.
-Practiced debugging syntax edge cases and refactored object manipulation to use precise chained square brackets instead of .update for professional, strict data handling.
+  Mastered real-world backend architecture concepts, including data contracts mimicking frontend JSON objects, safely nesting multi-level dictionaries, and managing system states.
+  Practiced debugging syntax edge cases and refactored object manipulation to use precise chained square brackets instead of .update for professional, strict data handling.
+Day 46:

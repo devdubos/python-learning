@@ -86,3 +86,5 @@ Day 45:
   
 Day 46-47:
   Mastered core OOP (Inheritance, Encapsulation, Polymorphism) and advanced initialization using **kwargs with super(). Leveraged __dict__ and __str__ dunder tools for efficient backend data formatting.
+Day 47
+Context manager

@@ -2,10 +2,10 @@
 # try:
 #     print(file.read())
 # finally:
-#     file.close()
+# #     file.close()
 
-with open('day_48/data.txt','r') as file:
-    print(file.read())
+# with open('day_48/data.txt','r') as file:
+#     print(file.read())
 
 
 class FileOpener:
@@ -20,7 +20,8 @@ class FileOpener:
 
     def __exit__(self, exc_type, exc, tb):
         self.file.close()
-        
+        return False
 
 with FileOpener('day_48/data.txt','r') as file:
     print(file.read())
+    raise ValueError("ASDFASF")

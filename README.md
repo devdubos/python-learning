@@ -86,10 +86,9 @@ Day 45:
   
 Day 46-47:
   Mastered core OOP (Inheritance, Encapsulation, Polymorphism) and advanced initialization using **kwargs with super(). Leveraged __dict__ and __str__ dunder tools for efficient backend data formatting.
-Day 47
-Context manager
-
+Day 47-49
+  Learn Context managers and how to use 'with' statement. Dive into Decorators to wrap functions and modify behavior.
 Day 50 
-  try async
-Day 51 
-  Realize i need first learn generator function
+  Try async but realize it is too complicated without prerequisites.
+Day 51-
+   Realize I need to learn generator functions first, start studying yield and next().

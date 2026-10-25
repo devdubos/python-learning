@@ -92,3 +92,4 @@ Day 50
   Try async but realize it is too complicated without prerequisites.
 Day 51-
    Realize I need to learn generator functions first, start studying yield and next().
+Day 52

@@ -60,3 +60,39 @@ print("\n--- Example 3: Delegation using yield from ---")
 orchestrator = main_orchestrator()
 for step in orchestrator:
     print(f"Received in loop: {step}")
+
+
+
+
+
+
+def raw_logs_generator(data):
+    with open (data,'r', encoding='utf-8') as file:
+        for line in file:
+            if bool(line.strip()) == True:
+                yield line
+
+def critical_filter_generator(input_stream):
+    for line in input_stream:
+        clean_line = line.strip().lower()
+        if "critical" in clean_line or "error" in clean_line:
+            yield line
+
+def alert_formatter_generator(filter_stream):
+    for line in filter_stream:
+        line = "🚨" + line.strip().upper()
+        yield line
+
+
+
+
+input_stream = raw_logs_generator(data)
+filter_stream = critical_filter_generator(input_stream)
+finish_stream = alert_formatter_generator(filter_stream)
+
+
+for line in finish_stream:
+    print(line)
+
+
+

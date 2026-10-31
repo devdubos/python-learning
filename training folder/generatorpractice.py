@@ -36,17 +36,14 @@ def even_numbers(numbers):
 
 def square_numbers(start_num):
     for num in start_num:
-        square = num**2
-        yield square
+        yield num**2
 
 def cut_nubmers(square_num, limit):
     for num in square_num:
         if num >= limit:
-            return num and "processing compelete"
+            return  
         else:
             yield num
-        return "processing compelete"
-
 
 start_num = even_numbers(nubmers)
 square_num = square_numbers(start_num)
@@ -54,8 +51,11 @@ limit_num = cut_nubmers(square_num, limit)
 
 
 while True:
-    try
-    num = next(limit_num)
-    if not num:
+    try:
+        num = next(limit_num)
+    except StopIteration:
+        print("Proccessing complete")
         break
     print(num)
+
+

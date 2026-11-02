@@ -94,3 +94,5 @@ Day 51-
    Realize I need to learn generator functions first, start studying yield and next().
 Day 52-55
   Doing a lot of practice of generator. Use besides next()- send(),throw() and close()
+Day 58:
+  eventually see the end of generators

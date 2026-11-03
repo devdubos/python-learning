@@ -43,10 +43,10 @@ def wallet_generator():
 
 g = wallet_generator()
 
-print(next(g))
-print("Баланс:", g.send(50))
-print("Баланс:", g.send(100))
-print("Баланс:", g.send(25))
+# print(next(g))
+# print("Баланс:", g.send(50))
+# print("Баланс:", g.send(100))
+# print("Баланс:", g.send(25))
 
 
 
@@ -63,7 +63,20 @@ def caps_lock_generator():
 
 g = caps_lock_generator()
 
-next(g)
-g.send("привет")
-g.send("python")
-g.send("работает")
+# next(g)
+# g.send("привет")
+# g.send("python")
+# g.send("работает")
+
+
+
+def price():
+    price = 1000
+    discount = yield price 
+
+
+g = price()
+print(next(g))
+print(next(g)) 
+
+# FUCK THIS I REALLY TIERD LOGIC OF SEND() NOT NATURAL. I GIVE UP

@@ -1,0 +1,7 @@
+TX1001|SUCCESS|4500|RUB|user1@mail.ru
+TX1002|FAILED|0|USD|bad-email.com
+TX1003|SUCCESS|12000|RUB|admin@shop.ru
+TX1004|SUCCESS|-500|RUB|cheater@mail.ru
+TX1005|PENDING|300|EUR|user2@mail.ru
+
+

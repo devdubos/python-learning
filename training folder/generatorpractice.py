@@ -25,37 +25,39 @@ def pulsar():
 # print(next(p))
 
 
-N = int(input("Ur number please: "))
-nubmers =range(1, N+1)
-limit = int(input("Ur limit please: "))
+# N = int(input("Ur number please: "))
+# nubmers =range(1, N+1)
+# limit = int(input("Ur limit please: "))
 
-def even_numbers(numbers):
-    for num in nubmers:
-        if num % 2 == 0:
-            yield num
+# def even_numbers(numbers):
+#     for num in nubmers:
+#         if num % 2 == 0:
+#             yield num
 
-def square_numbers(start_num):
-    for num in start_num:
-        yield num**2
+# def square_numbers(start_num):
+#     for num in start_num:
+#         yield num**2
 
-def cut_nubmers(square_num, limit):
-    for num in square_num:
-        if num >= limit:
-            return  
-        else:
-            yield num
-
-start_num = even_numbers(nubmers)
-square_num = square_numbers(start_num)
-limit_num = cut_nubmers(square_num, limit)
+# def cut_nubmers(square_num, limit):
+#     for num in square_num:
+#         if num >= limit:
+#             return  
+#         else:
+#             yield num
 
 
-while True:
-    try:
-        num = next(limit_num)
-    except StopIteration:
-        print("Proccessing complete")
-        break
-    print(num)
+
+def read_logs():
+    with open("training folder/text.log", encoding="utf-8") as f:
+        for line in f:
+            yield line.strip()
+
+def parse_to_dict(line):
+    
 
 
+
+
+g = read_logs()
+g2 = parse_to_dict(g)
+g3 = None

@@ -1,0 +1,7 @@
+ORDER#1|electronics|15000|completed|msk
+ORDER#2|books|0|canceled|spb
+ORDER#3|clothes|4500|completed|unknown
+ORDER#4|electronics|-200|completed|nsk
+ORDER#5|books|1200|completed|spb
+ORDER#6|appliances|45000|processing|msk
+ORDER#7||3000|completed|msk

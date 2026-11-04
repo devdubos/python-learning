@@ -79,7 +79,7 @@ def critical_filter_generator(input_stream):
             yield line
 
 def alert_formatter_generator(filter_stream):
-    for line in filter_stream:
+    for line in filter_stream: 
         line = "🚨" + line.strip().upper()
         yield line
 

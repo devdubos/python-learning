@@ -89,18 +89,23 @@ def add_session_metrics(dictionary_generator):
 def get_clean_lines():
     with open("training folder/text2.log", "r", encoding="utf-8") as file:
         for line in file:
-            clean_line = line.split()
+            clean_line = line.strip()
             if clean_line:
-                yield clean_line
+                yield clean_line.split("|")
+
+
 
 def convert_to_dict(line):
     keys = ["id", "category", "price", "status", "city"]
     for item in line:
         item = dict(zip(keys, item))
         item["price"] = int(item["price"])
+        yield item
+
+
 def audit_filter(convert_to_dict_item):
     for item in convert_to_dict_item:
-        if item.get("status") == "completed" and item.get("price") > 0 and item.get("city") != "unknow":
+        if item.get("status") == "completed" and item.get("price") > 0 and item.get("city") != "unknown" and item.get("category")!= "":
             yield item
 
 def add_tax_and_count(item_audit_filter):

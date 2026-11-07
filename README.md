@@ -86,15 +86,21 @@ Day 45:
   
 Day 46-47:
   Mastered core OOP (Inheritance, Encapsulation, Polymorphism) and advanced initialization using **kwargs with super(). Leveraged __dict__ and __str__ dunder tools for efficient backend data formatting.
+  
 Day 47-49
   Learn Context managers and how to use 'with' statement. Dive into Decorators to wrap functions and modify behavior.
+
 Day 50 
   Try async but realize it is too complicated without prerequisites.
+
 Day 51-
    Realize I need to learn generator functions first, start studying yield and next().
+   
 Day 52-55
   Doing a lot of practice of generator. Use besides next()- send(),throw() and close()
+
 Day 58:
   Eventually see the end of generators. I give up send() and other useless stuff. Really waiste time - last 3 ex practice, and i begin async.
+
 Day 60:
   Start practice async

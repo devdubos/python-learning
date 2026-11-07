@@ -96,3 +96,5 @@ Day 52-55
   Doing a lot of practice of generator. Use besides next()- send(),throw() and close()
 Day 58:
   Eventually see the end of generators. I give up send() and other useless stuff. Really waiste time - last 3 ex practice, and i begin async.
+Day 60:
+  Start practice async

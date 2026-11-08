@@ -105,4 +105,11 @@ Day 58:
 Day 60:
   Start practice async. I need another one cup of time for this small part. 
 
+Day 62:
+    Finished studying async and generators completely. Explored the encapsulation approach using functions/classes and achieved perfect visual pairs in the terminal. I can confidently say 
+    the Python core foundation is passed. Next up is the real and serious process of diving into actual production work with FastAPI.
 
+-------------------------------------------------------------------------------Backend Engineering-----------------------------------------------------------------------------------------------
+
+Day 63:
+  FastApi.

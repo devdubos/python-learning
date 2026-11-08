@@ -2,7 +2,7 @@ Python Learning Journey
 This is my learning repository.
 I will update and describe my progress in order to see what can be achieved,
 I understand that this is an important part of my journey
-
+-------------------------------------------------------------------------------Python foundation-------------------------------------------------------------------------------------------------
 Day one:
   Learn variables, conditions, logical operators and f-strings.
   Practice exercises and created the simplest calculator.
@@ -36,7 +36,7 @@ Day 9:
 Day 10-12:
   Practiced complex loop patterns. Combined loops with conditional statements and explored nested loop structures.
 
-Day 13:
+Day 13:+++
   Learned about the enumerate() function. Practiced tracking item indexes simultaneously while iterating through sequences.
 
 Day 14-17:
@@ -103,4 +103,6 @@ Day 58:
   Eventually see the end of generators. I give up send() and other useless stuff. Really waiste time - last 3 ex practice, and i begin async.
 
 Day 60:
-  Start practice async
+  Start practice async. I need another one cup of time for this small part. 
+
+

@@ -1,0 +1,3 @@
+Minsk,550
+Tokio,4123
+Moskow,1520

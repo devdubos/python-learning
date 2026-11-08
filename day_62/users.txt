@@ -1,0 +1,3 @@
+Ivan,ivan@mail.com,@ivan_tg
+Anna,anna@mail.com,@anna_tg
+Petr,petr@mail.com,@petr_tg

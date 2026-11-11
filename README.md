@@ -2,7 +2,9 @@ Python Learning Journey
 This is my learning repository.
 I will update and describe my progress in order to see what can be achieved,
 I understand that this is an important part of my journey
--------------------------------------------------------------------------------Python foundation-------------------------------------------------------------------------------------------------
+
+Python foundation---------------------------------------------
+
 Day one:
   Learn variables, conditions, logical operators and f-strings.
   Practice exercises and created the simplest calculator.
@@ -109,7 +111,9 @@ Day 62:
     Finished studying async and generators completely. Explored the encapsulation approach using functions/classes and achieved perfect visual pairs in the terminal. I can confidently say 
     the Python core foundation is passed. Next up is the real and serious process of diving into actual production work with FastAPI.
 
--------------------------------------------------------------------------------Backend Engineering-----------------------------------------------------------------------------------------------
+
+Backend Engineering-------------------------------------------------------------
+
 
 Day 63:
-  FastApi.
+  First steps on FastApi, just try learn with copy code, now wanna try write mine.

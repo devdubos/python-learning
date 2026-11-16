@@ -33,3 +33,5 @@ async def create_note(note: Note):
         "message": "Заметка успешно создана",
         "data": note
     }
+
+

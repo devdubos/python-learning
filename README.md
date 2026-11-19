@@ -119,3 +119,5 @@ Day 63:
   First steps on FastApi, just try learn with copy code, now wanna try write mine.
 Day 64:
   Try another code with ai just learn write myself, need ready example. Im use ai only for learning, im against "vibecoding" dont love this termin. For me important write code by myself without help!
+Day 67:
+  Got a clear understanding of how APIs, Swagger UI, and ports work in practice. Set up Node.js and launched a local frontend template to test real HTTP requests via F12 Network before writing my own FastAPI endpoints for it.

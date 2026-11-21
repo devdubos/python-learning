@@ -55,11 +55,11 @@ def update_task(task_id:str, payload:TaskUpdateSchema):
 
 @app.delete("/tasks/{task_id}", status_code = status.HTTP_204_NO_CONTENT)
 def delete_task(task_id: str):
-    # for task in tasks:
-    #     if task.id == task_id:
-    #         tasks.remove(task)
-    #         return task
-    for i, task in enumerate(tasks):
+    for task in tasks:
         if task.id == task_id:
-            return tasks.pop(i)
+            tasks.remove(task)
+            return task
+    # for i, task in enumerate(tasks):
+    #     if task.id == task_id:
+    #         return tasks.pop(i)
 

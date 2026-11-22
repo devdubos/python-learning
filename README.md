@@ -126,3 +126,5 @@ Day 70:
 
 Day 71:
     Studied basic FastAPI endpoints (GET, POST, PATCH, DELETE) on a practice example. Connected them to the frontend, saw how Uvicorn, CORS, and Pydantic work together, and fixed a small logic bug with None checks.
+Day 72:
+    Started practicing independently by building the categories functionality on my own.

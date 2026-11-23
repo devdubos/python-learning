@@ -26,9 +26,6 @@ class TaskUpdateSchema(BaseModel):
     completed:bool | None = None
 
 
- 
-
-
 
 @app.get("/tasks")
 def read_tasks():
@@ -52,7 +49,6 @@ def update_task(task_id:str, payload:TaskUpdateSchema):
                 return task 
 
 
-
 @app.delete("/tasks/{task_id}", status_code = status.HTTP_204_NO_CONTENT)
 def delete_task(task_id: str):
     for task in tasks:
@@ -63,3 +59,29 @@ def delete_task(task_id: str):
     #     if task.id == task_id:
     #         return tasks.pop(i)
 
+
+categories:list[CategoriesSchema] = []
+
+class CategoriesSchema(BaseModel):
+    id: str
+    name: str
+
+class CategoriesCreateSchema(BaseModel):
+    name:str
+
+class CategoiresUpdateSchema(BaseModel):
+    name:str
+
+@app.get("/categories")
+def read_categories():
+    return categories
+
+
+@app.post("/categories",status_code= status.HTTP_201_CREATED)
+def create_categories(payload: CategoriesCreateSchema):
+    new_ctg = CategoriesSchema(id= str(uuid4()), name = payload.name)
+    categories.append(new_ctg)
+    return new_ctg
+
+@app.patch("/categories")
+def update_categories()

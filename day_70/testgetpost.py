@@ -13,8 +13,6 @@ app.add_middleware(
 )   
 
 
-tasks:list[TaskSchema]= []
-
 class TaskSchema(BaseModel): 
     id: str
     title: str
@@ -24,6 +22,8 @@ class TaskCreateSchema(BaseModel):
 class TaskUpdateSchema(BaseModel):
     title: str | None = None
     completed:bool | None = None
+
+tasks:list[TaskSchema]= []
 
 
 
@@ -60,7 +60,6 @@ def delete_task(task_id: str):
     #         return tasks.pop(i)
 
 
-categories:list[CategoriesSchema] = []
 
 class CategoriesSchema(BaseModel):
     id: str
@@ -72,6 +71,8 @@ class CategoriesCreateSchema(BaseModel):
 class CategoiresUpdateSchema(BaseModel):
     name:str
 
+categories:list[CategoriesSchema] = []
+
 @app.get("/categories")
 def read_categories():
     return categories
@@ -79,9 +80,21 @@ def read_categories():
 
 @app.post("/categories",status_code= status.HTTP_201_CREATED)
 def create_categories(payload: CategoriesCreateSchema):
-    new_ctg = CategoriesSchema(id= str(uuid4()), name = payload.name)
+    new_ctg = CategoriesSchema(id = str(uuid4()), name = payload.name)
     categories.append(new_ctg)
     return new_ctg
 
-@app.patch("/categories")
-def update_categories()
+@app.patch("/categories/{ctg_id}")
+def update_categories(ctg_id:str, payload:CategoiresUpdateSchema):
+    for ctg in categories:
+        if ctg.id == ctg_id:
+            if payload.name:
+                ctg.name = payload.name
+                return ctg
+
+@app.delete("/categories/{ctg_id}")
+def delete_categories(ctg_id:str,):
+    for ctg in categories:
+        if ctg.id == ctg_id:
+            categories.remove(ctg)
+            return categories

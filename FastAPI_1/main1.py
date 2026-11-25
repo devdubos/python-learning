@@ -3,6 +3,9 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import status
 from uuid import uuid4
+from fastapi import HTTPException
+from fastapi import Query
+
 
 app = FastAPI()
 
@@ -24,14 +27,17 @@ class ItemsCreateSchema(BaseModel):
     is_done: bool
 
 @app.get("/items",status_code= status.HTTP_200_OK)
-def ReadItems(search: str | None = None):
+def ReadItems(search: str | None = Query(default=None, min_length=2, max_length=50, description="Search on word"),
+            skip: int = Query(default=0, ge=0, description="How much items skip"),
+            limit:int = Query(default=10, ge=1, le=50, description="Сколько задач вывести")):
+
     box:list = []
     if search:
         for item in items:
             if search.lower() in item["title"].lower():
                 box.append(item)
-        return box
-    return items 
+        return box[skip : skip + limit]
+    return items[skip : skip + limit] 
 
 
 @app.get("/items/{items_id}",status_code= status.HTTP_200_OK)
@@ -39,6 +45,7 @@ def ReadItemsId(items_id:str):
     for item in items:
         if item["id"] == items_id:
             return item
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail="Dont found,try another one")
 
 @app.post("/items", status_code=status.HTTP_201_CREATED   )        
 def CreateItems (payload:ItemsCreateSchema):
@@ -46,13 +53,13 @@ def CreateItems (payload:ItemsCreateSchema):
     items.append(new_item.model_dump())
     return items
 
-
 @app.delete("/items/{items_id}",status_code=status.HTTP_204_NO_CONTENT  )   
 def DeleteItemId(items_id:str):
     for item in items:
         if item["id"] == items_id:
             items.remove(item)
-    return items
+            return
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail="Dont found,try another one")   
 
 @app.patch("/items/{items_id}")
 def UpdateItems(items_id:str):
@@ -63,5 +70,5 @@ def UpdateItems(items_id:str):
             else:
                 item["is_done"]=True
             return item
-        if not item:
-            return items
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail="Dont found,try another one")   
+        

@@ -132,3 +132,4 @@ Day 72:
 
 Day 74:
   Pratice in swagger. Just do ex from AI. Add CRUD endpoints with query filters and 404 handling
+Day 75:
